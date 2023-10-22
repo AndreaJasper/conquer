@@ -1,0 +1,397 @@
+#header {
+	background-color: #383E4C;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-blue {
+	color: #343483;
+}
+
+.text-purple {
+	color: #732d85;
+}
+
+.text-gray {
+	color: #666;
+}
+
+.btn-blue {
+	background-color: #343483;
+}
+.btn-blue:hover {
+	background-color: #545494;
+}
+
+.btn-purple {
+	background-color: #732d85;
+}
+
+.btn-purple:hover {
+	background-color: #7e468c;
+}
+
+
+.btn-green {
+	background-color: #3e5911;
+}
+.btn-green:hover {
+	background-color: #57702f;
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #666;
+	border: 1px solid #666;
+}
+.btn-white:hover {
+	background-color: #EAE9E9;
+}
+
+.btn-black {
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.btn-black:hover {
+	background-color: #fff;
+	color: #666;
+}
+
+.header {
+	background: #383E4C;
+}
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  /*height: 100vh;*/
+  
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: #fff;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url('img/bg-1.jpg');
+}
+
+.bg2::after {
+  background-image: url('img/bg-2.jpg');
+}
+
+.bg3::after {
+  background-image: url('img/bg-3.jpg');
+}
+
+.main-banner {
+	    height: 510px;
+    margin-top: -55px;
+}
+
+.banner {
+	text-align: center;
+}
+
+.banner-content h1 {
+    color: #fff;
+    text-shadow: 2px 2px #333;
+}
+.banner-content p {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+
+.banner h1 {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.about-section {
+	height: 100%;
+	padding: 60px 0px;
+}
+
+.blog {
+	padding: 0px 0px 60px 0px;
+	height: 100%;
+}
+
+.blog-content p {
+	padding: 10px 20px 0px 20px;
+	text-align: left;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+.feature-content {
+	background-color: #F2F2F2;
+	padding-bottom: 40px;
+}
+.featured-title {
+	padding: 20px 20px 5px 20px;
+	text-align: left;
+}
+.featured-description {
+	padding: 5px 20px;
+	text-align: left;
+}
+
+.featured-content-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 10px 30px;
+	transition: all 0.3s ease;
+
+}
+
+.featured-content-link:link {
+	color: #fff;
+	text-decoration: none;
+}
+.blog-content {
+	background: #F2F2F2;
+	padding-bottom: 25px;
+	max-width: 555px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.blog-content span {
+	margin-left: 335px;
+}
+
+.blog-content span a {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	color: #666;
+	font-size: 18px;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+.blog-content span a:hover {
+	background: #edeaea;
+}
+
+.content-link {
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    color: #666;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.content-link:hover {
+	background: #edeaea;
+	color: #666;
+	text-decoration: none;
+
+}
+
+.services {
+	margin: 100px 0px 100px 0px;
+	height: 380px;
+}
+
+.services h1 {
+	color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #aaa;
+    margin-bottom: 20px;
+}
+
+.services p {
+	color: #fff;
+}
+
+.testimonial-area {
+	padding: 60px 0px 60px 0px;
+}
+
+.testimonial-content {
+	background: #F2F2F2;
+	padding-bottom: 25px;
+	height: 100%;
+}
+
+.testimonial-content h2 {
+	color: #666;
+	padding-top: 20px;
+}
+
+.testimonial-content p {
+	padding: 10px 20px 0px 20px;
+	text-align: left;
+	color: #333;
+}
+
+.tm-box {
+	max-width: 1140px;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.tm-box-description {
+	padding: 30px;
+	background-color: #f2f2f2;
+	padding-bottom: 60px;
+}
+
+.tm-box p {
+	margin-bottom: 10px;
+}
+
+.contact {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.contact-content {
+	padding-top: 60px;
+}
+
+.contact-section {
+    height: 100%;
+    margin-bottom: 60px;
+}
+
+.contact-section .container {
+    max-width: 750px;
+}
+
+.contact-content h1 {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #333;
+}
+
+.contact-content p {
+    background: rgba(242,242,242,0.4) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+}
+
+.contact-btn {
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 10px 30px;
+	transition: all 0.3s ease;
+}
+
+.form-control {
+    color: #000;
+	border: none;
+    background: rgba(242,242,242,0.4);
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+	border-radius: 4px;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+input {
+    margin-bottom: 15px;
+	display: inline-block;
+	float: left;
+}
+
+textarea.form-control{
+	height: auto;
+}
+
+.footer {
+	margin: 100px 0 40px 0;
+}
+
+.footer h1 {
+	margin-bottom: 25px;
+	color: #666;
+	font-style: italic;
+	padding-top: 60px;
+	
+}
+
+.footer blockquote {
+	color: #999;
+	font-style: italic;
+}
+
+.footer hr {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.copyright {
+	font-size: 10px;
+	margin-bottom: 100px;
+}
