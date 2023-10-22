@@ -1,7 +1,7 @@
 # Conquer
 
 ## About
-A single page website design for CSS and HTML practice.
+A single-page website design for CSS and HTML practice.
 
 ## Stack
 - HTML
@@ -9,4 +9,4 @@ A single page website design for CSS and HTML practice.
 - JavaScript
 - Bootstrap
 
-![](https://github.com/AndreaJasper/conquer/blob/main/screenshot.png)
+![](https://github.com/AndreaJasper/conquer/blob/main/screeshot.png)
